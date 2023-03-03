@@ -11,3 +11,6 @@ int main(){
    cout<<"Sum of these two :"<<sum(x,y);
    return 0;
 }
+int second(){
+   int x, y;
+}
