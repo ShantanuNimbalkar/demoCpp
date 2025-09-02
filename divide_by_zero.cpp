@@ -1,6 +1,6 @@
 #include <iostream>
 
-void test(int z) { if (z == 0) int x = 1 / z; // warn }
+void test(int z) { if (z == 0) int x = 1 / z;  warn }
 
 /**
  * @brief Demonstrates a potential division by zero.
