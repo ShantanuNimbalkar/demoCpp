@@ -1,5 +1,7 @@
 #include <iostream>
 
+void test(int z) { if (z == 0) int x = 1 / z; // warn }
+
 /**
  * @brief Demonstrates a potential division by zero.
  * * This function checks if the input integer 'z' is zero. If it is, it
@@ -17,7 +19,7 @@ void test1(int z) {
     }
 }
 
-void test(int z) { if (z == 0) int x = 1 / z; // warn }
+
 
 /**
  * @brief Main entry point of the program.
