@@ -7,7 +7,8 @@
  * runtime error.
  * * @param z The integer to use as the divisor.
  */
-void test(int z) {
+void test(int z) { 
+    int y = 1 / 0;
     if (z == 0) {
         // This line will cause a warning from static analyzers and a
         // floating-point exception (crash) at runtime.
