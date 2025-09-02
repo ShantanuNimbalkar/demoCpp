@@ -7,7 +7,7 @@
  * runtime error.
  * * @param z The integer to use as the divisor.
  */
-void test(int z) { 
+void test1(int z) { 
     int y = 1 / 0;
     if (z == 0) {
         // This line will cause a warning from static analyzers and a
@@ -16,6 +16,8 @@ void test(int z) {
         std::cout << "This will not be printed." << std::endl;
     }
 }
+
+void test(int z) { if (z == 0) int x = 1 / z; // warn }
 
 /**
  * @brief Main entry point of the program.
